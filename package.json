@@ -1,0 +1,24 @@
+{
+  "bin": {
+    "tessssstttt-bot": "dist/src/cli.js"
+  },
+  "description": "Clean-room local-first desktop workspace for persistent AI teammates \u2014 built from a behaviour specification. Milestone 1: core + provider connection.",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "main": "dist/src/index.js",
+  "name": "tessssstttt-bot",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/src/cli.js status",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "type": "module",
+  "version": "0.1.0"
+}
